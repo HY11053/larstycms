@@ -22,6 +22,9 @@ class CreateAsksTable extends Migration
             $table->integer('answernum')->default(0);
             $table->integer('is_hidden')->default(0);
             $table->ipAddress('ip');
+            $table->string('tags');
+            $table->integer('goodpost')->default(0);
+            $table->integer('mid')->default(0);
             $table->timestamps();
         });
     }

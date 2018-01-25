@@ -20,18 +20,17 @@ class CreateArchivesTable extends Migration
             $table->integer('click');
             $table->string('title');
             $table->string('shorttitle')->nullable();
+            $table->string('flags')->nullable();
             $table->string('tags')->nullable();
             $table->string('country')->nullable();
-            $table->timestamp('published_at')->nullable();
-            $table->integer('mid');
+            $table->integer('mid');#文档类型
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
             $table->string('write');
             $table->string('litpic')->nullable();
             $table->smallInteger('dutyadmin');
+            $table->timestamp('published_at')->nullable();#预选发布时间
             $table->timestamps();
-            //$table->primary('typeid');
-            //$table->foreign('typeid')->references('id')->on('arctypes');
         });
     }
 

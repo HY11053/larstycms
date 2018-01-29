@@ -1,10 +1,10 @@
 @extends('frontend.frontend')
-@section('title'){{ config('app.webname', '世纪饮品网') }}@stop
-@section('keywords'){{ config('app.keywords', '世纪饮品网') }}@stop
-@section('description'){{ config('app.description', '世纪饮品网') }}@stop
+@section('title'){{ config('app.webname', '5988创业商机网') }}@stop
+@section('keywords'){{ config('app.keywords', '5988创业商机网') }}@stop
+@section('description'){{ config('app.description', '5988创业商机网') }}@stop
 @section('headlibs')
-    <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
-    <meta name="author" content="世纪饮品网" />
+    <meta name="Copyright" content="5988创业商机网-{{env('APP_URL')}}"/>
+    <meta name="author" content="5988创业商机网" />
     <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
     <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
     <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
@@ -165,7 +165,7 @@
 
             <div class="index_box1_r">
                 <div class="count">
-                    <p>世纪饮品网入驻品牌数<br>
+                    <p>5988创业商机网入驻品牌数<br>
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>

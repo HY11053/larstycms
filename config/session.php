@@ -124,7 +124,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        str_slug(env('APP_NAME', '12yinpin.com'), '_').'_session'
+        str_slug(env('APP_NAME', 'zhaji.5988.com'), '_').'_session'
     ),
 
     /*

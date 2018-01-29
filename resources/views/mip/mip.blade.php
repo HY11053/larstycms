@@ -13,7 +13,7 @@
     @if(Request::getrequesturi()=='/')
         <title>@yield('title')</title>
     @else
-        <title>@yield('title')-世纪饮品网</title>
+        <title>@yield('title')-5988创业商机网</title>
     @endif
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
@@ -423,7 +423,7 @@
     <div class="index_message">
         <div class="message_tit"><span>在线留言</span><em>(客服将第一时间给您回电)</em></div>
         <div class="mfdh clearfix">
-            <mip-form method="get" url="http://mip.21yinpin.com/phone/crosscomplate">
+            <mip-form method="get" url="http://mip.zhaji.5988.com/phone/crosscomplate">
                 <ul>
                     <li>
                         <label class="p-tips">姓名：</label>
@@ -459,7 +459,7 @@
             <a href="/storage/mobilesitemap.xml">网站地图</a>|<a href="/about/" rel="nofollow">关于我们</a>|<a href="/law/" rel="nofollow">免责声明</a>|<a href="{{env('APP_URL')}}">电脑版</a>
         </div>
         <div class="copyright">
-            <p>世纪饮品网  沪ICP备16055116号-17</p>
+            <p>5988创业商机网  沪ICP备16055116号-17</p>
             <p>上海莫卡网络科技有限公司</p>
         </div>
     </div>
@@ -501,7 +501,7 @@
                     <span class="popup_close" on="tap:my-lightbox.toggle" class="lightbox-close">关闭</span>
                 </div>
                 <div class="bd">
-                    <mip-form method="get" url="http://mip.21yinpin.com/phone/mipcrosscomplate" class="mip-element mip-layout-container">
+                    <mip-form method="get" url="http://mip.zhaji.5988.com/phone/mipcrosscomplate" class="mip-element mip-layout-container">
                     <ul>
                         <li>
                             <label for="msg_name" class="label">姓名：</label>

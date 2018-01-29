@@ -21,7 +21,7 @@ class NaichaBrandController extends Controller
         {
             if(!empty($brand) && empty(Naichabrand::where('brand',$brand)->value('brand')))
             {
-                Naichabrand::create(['brand'=>$brand,'type'=>'奶茶店','num'=>1]);
+                Naichabrand::create(['brand'=>$brand,'type'=>'炸鸡店','num'=>1]);
                 //dd(BrandDatas::where('brands','like','%'.$arr.'%')->value('brands'));
             }else{
                 Naichabrand::where('brand',Naichabrand::where('brand',$brand)->value('brand'))->update(['num'=>Naichabrand::where('brand',$brand)->value('num')+1]);

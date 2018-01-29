@@ -18,7 +18,10 @@ class CreateAreasTable extends Migration
             $table->string('city');
             $table->string('coord');
             $table->string('privince');
+            $table->index('city');
+            $table->index('coord');
         });
+
     }
 
     /**

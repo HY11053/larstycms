@@ -23,6 +23,12 @@ class CreateCommentReversionsTable extends Migration
             $table->text('content');
             $table->ipAddress('ip');
             $table->timestamps();
+            $table->index('comment_id');
+            $table->index('archive_id');
+            $table->index('user_id');
+            $table->index('goodpost');
+            $table->index('is_hidden');
+            $table->index('ip');
         });
     }
 

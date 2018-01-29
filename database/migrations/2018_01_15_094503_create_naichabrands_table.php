@@ -20,6 +20,7 @@ class CreateNaichabrandsTable extends Migration
             $table->integer('num');
             $table->integer('status')->default(0);
             $table->timestamps();
+            $table->index('num');
         });
     }
 

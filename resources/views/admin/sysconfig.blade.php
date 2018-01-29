@@ -69,7 +69,7 @@
                                     <div class="form-group col-md-12">
                                         <label for="remark" class="control-label col-md-2 col-sm-3 col-xs-12">版权信息</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <textarea class="resizable_textarea form-control" placeholder="Copyright © 2017 www.21yinpin.com Corporation, All Rights Reserved 上海莫卡网络科技有限公司 版权所有"></textarea>
+                                            <textarea class="resizable_textarea form-control" placeholder="Copyright © 2017 www.zhaji.5988.com Corporation, All Rights Reserved 上海莫卡网络科技有限公司 版权所有"></textarea>
                                         </div>
                                     </div>
 

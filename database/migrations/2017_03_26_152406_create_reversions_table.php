@@ -22,6 +22,11 @@ class CreateReversionsTable extends Migration
             $table->integer('goodpost');
             $table->integer('is_hidden')->default(0);
             $table->timestamps();
+            $table->index('ask_id');
+            $table->index('answer_id');
+            $table->index('user_id');
+            $table->index('goodpost');
+            $table->index('is_hidden');
         });
     }
 

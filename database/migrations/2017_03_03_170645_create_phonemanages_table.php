@@ -20,9 +20,10 @@ class CreatePhonemanagesTable extends Migration
             $table->string('gender')->default('');
             $table->string('address')->default('');
             $table->ipAddress('ip');
-            $table->string('note')->default('');
+            $table->string('note')->nullable();
             $table->string('host')->nullable();
             $table->text('referer')->nullable();
+            $table->index('phoneno');
             $table->timestamps();
         });
     }

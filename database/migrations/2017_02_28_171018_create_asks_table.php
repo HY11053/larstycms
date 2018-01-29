@@ -26,6 +26,13 @@ class CreateAsksTable extends Migration
             $table->integer('goodpost')->default(0);
             $table->integer('mid')->default(0);
             $table->timestamps();
+            $table->index('user_id');
+            $table->index('viewnum');
+            $table->index('answernum');
+            $table->index('is_hidden');
+            $table->index('goodpost');
+            $table->index('mid');
+            $table->index('ip');
         });
     }
 

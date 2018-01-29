@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', '世纪饮品网'),
+    'name' => env('APP_NAME', '5988创业商机网'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://www.21yinpin.com'),
+    'url' => env('APP_URL', 'http://www.zhaji.5988.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -132,12 +132,12 @@ return [
     | Site home page key words and description and record information
     | and other related settings
     */
-    'webname'=>'世纪饮品网-饮品奶茶加盟平台_奶茶店加盟品牌发布平台',
-    'indexname'=>'世纪饮品网',
-    'keywords'=>'奶茶店加盟,饮品店加盟,奶茶品牌加盟,世纪饮品网',
-    'description'=>'世纪饮品网品牌信息服务平台,汇聚精选全球饮品奶茶品牌商机,拥有海量饮品类奶茶店加盟项目,致力于服务广大有奶茶店投资需求的创业人群,帮助创业者了解开店饮品品牌的选择、进货批发、饮品配方及各类信息',
-    'api'=>'http://data.zz.baidu.com/urls?site=www.21yinpin.com&token=QeSFIvl5RWRgU3BT',
-    'mip_api'=>'http://data.zz.baidu.com/urls?site=mip.21yinpin.com&token=QeSFIvl5RWRgU3BT&type=mip',
+    'webname'=>'5988创业商机网-饮品奶茶加盟平台_奶茶店加盟品牌发布平台',
+    'indexname'=>'5988创业商机网',
+    'keywords'=>'奶茶店加盟,饮品店加盟,奶茶品牌加盟,5988创业商机网',
+    'description'=>'5988创业商机网品牌信息服务平台,汇聚精选全球饮品奶茶品牌商机,拥有海量饮品类奶茶店加盟项目,致力于服务广大有奶茶店投资需求的创业人群,帮助创业者了解开店饮品品牌的选择、进货批发、饮品配方及各类信息',
+    'api'=>'http://data.zz.baidu.com/urls?site=www.zhaji.5988.com&token=QeSFIvl5RWRgU3BT',
+    'mip_api'=>'http://data.zz.baidu.com/urls?site=mip.zhaji.5988.com&token=QeSFIvl5RWRgU3BT&type=mip',
     /*
 
     /*

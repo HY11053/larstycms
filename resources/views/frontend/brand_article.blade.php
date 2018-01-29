@@ -3,8 +3,8 @@
 @section('keywords'){{$thisarticleinfos->keywords}}@stop
 @section('description'){{trim($thisarticleinfos->description)}}@stop
 @section('headlibs')
-    <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
-    <meta name="author" content="世纪饮品网" />
+    <meta name="Copyright" content="5988创业商机网-{{env('APP_URL')}}"/>
+    <meta name="author" content="5988创业商机网" />
     <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
     <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
     <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
@@ -12,8 +12,8 @@
     <link rel="canonical" href="{{config('app.url')}}{{Request::getrequesturi()}}"/>
     <meta property="og:type" content="article"/>
     <meta property="article:published_time" content="{{$thisarticleinfos->created_at}}+08:00" /> <meta property="og:image" content="{{env('APP_URL')}}{{$thisarticleinfos->litpic}}"/>
-    <meta property="article:author" content="世纪饮品网" />
-    <meta property="article:published_first" content="世纪饮品网, {{config('app.url')}}{{Request::getrequesturi()}}" />
+    <meta property="article:author" content="5988创业商机网" />
+    <meta property="article:published_first" content="5988创业商机网, {{config('app.url')}}{{Request::getrequesturi()}}" />
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
@@ -126,7 +126,7 @@
             <div class="news_center">
 
                 <div class="join_cont">
-                    <div class="join_tit" id="js_join_1" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->ppjstitle))  <h2 class="tit">{{$thisarticleinfos->ppjstitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>品牌介绍</em></h2>  @endif</div>
+                    <div class="join_tit" id="js_join_1" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->article->ppjstitle))  <h2 class="tit">{{$thisarticleinfos->article->ppjstitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>品牌介绍</em></h2>  @endif</div>
                     <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
                         <tbody>
                         <tr>
@@ -184,23 +184,23 @@
                         {!! $thisarticleinfos->article['body'] !!}
                     </div>
 
-                    <div class="join_tit" id="js_join_">@if(!empty($thisarticleinfos->jmxqtitle))  <h2 class="tit">{{$thisarticleinfos->jmxqtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟详情</em></h2>  @endif</div>
+                    <div class="join_tit" id="js_join_">@if(!empty($thisarticleinfos->article->jmxqtitle))  <h2 class="tit">{{$thisarticleinfos->article->jmxqtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟详情</em></h2>  @endif</div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmxq_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_2">@if(!empty($thisarticleinfos->jmystitle))  <h2 class="tit">{{$thisarticleinfos->jmystitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟优势</em></h2>  @endif </div>
+                    <div class="join_tit" id="js_join_2">@if(!empty($thisarticleinfos->article->jmystitle))  <h2 class="tit">{{$thisarticleinfos->article->jmystitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟优势</em></h2>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmys_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_3">@if(!empty($thisarticleinfos->jmlctitle))  <h2 class="tit">{{$thisarticleinfos->jmlctitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟流程</em></h2>  @endif </div>
+                    <div class="join_tit" id="js_join_3">@if(!empty($thisarticleinfos->article->jmlctitle))  <h2 class="tit">{{$thisarticleinfos->article->jmlctitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟流程</em></h2>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmlc_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_4">@if(!empty($thisarticleinfos->jmzctitle))  <h2 class="tit">{{$thisarticleinfos->jmzctitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟政策</em></h2>   @endif </div>
+                    <div class="join_tit" id="js_join_4">@if(!empty($thisarticleinfos->article->jmzctitle))  <h2 class="tit">{{$thisarticleinfos->article->jmzctitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟政策</em></h2>   @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmzc_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_5">@if(!empty($thisarticleinfos->jmasktitle))  <h2 class="tit" >{{$thisarticleinfos->jmasktitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟问答</em></h2>  @endif </div>
+                    <div class="join_tit" id="js_join_5">@if(!empty($thisarticleinfos->article->jmasktitle))  <h2 class="tit" >{{$thisarticleinfos->article->jmasktitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['brandname']}}】<em>加盟问答</em></h2>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmask_content'] !!}
                     </div>

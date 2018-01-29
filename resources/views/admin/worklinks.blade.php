@@ -7,7 +7,7 @@
 @section('content')
     <h3>工作链接生成</h3>
     @foreach($links as $link)
-        <li>http://mip.21yinpin.com/{{$link->arctype->real_path}}/{{$link->id}}.shtml</li>
+        <li>http://mip.zhaji.5988.com/{{$link->arctype->real_path}}/{{$link->id}}.shtml</li>
     @endforeach
 @stop
 

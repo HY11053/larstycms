@@ -127,7 +127,7 @@ Route::get('phone',function(){
 /**
  * mip页面
  */
-Route::group(['domain' => 'mip.21yinpin.com'], function () {
+Route::group(['domain' => 'mip.zhaji.5988.com'], function () {
     Route::get('/', 'Mip\MipIndexController@MipIndex');
     Route::get('about','Mip\MipIndexController@Mipabout');
     Route::get('law','Mip\MipIndexController@Miplaw');
@@ -143,7 +143,7 @@ Route::group(['domain' => 'mip.21yinpin.com'], function () {
     Route::any('/phone/mipcrosscomplate','Mobile\PhoneController@phoneButtomComplates');
 });
 //前台界面
-Route::group(['domain' => 'm.21yinpin.com'], function () {
+Route::group(['domain' => 'm.zhaji.5988.com'], function () {
     Route::get('/', 'Mobile\MobileController@Index');
     Route::get('about','Mobile\StatementController@about');
     Route::get('law','Mobile\StatementController@law');

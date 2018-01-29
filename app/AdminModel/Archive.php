@@ -8,7 +8,21 @@ use Carbon\Carbon;
 class Archive extends Model
 {
     protected $fillable=[
-        'title','shorttitle','tags','keywords','country','ismake','published_at','mid','litpic','typeid','channelid','click','weight','description','write','dutyadmin','flags','ppjstitle','jmxqtitle','jmystitle','jmlctitle','jmzctitle','jmasktitle'
+        'typeid',
+        'ismake',
+        'click',
+        'title',
+        'shorttitle',
+        'flags',
+        'tags',
+        'country',
+        'mid',
+        'keywords',
+        'description',
+        'write',
+        'litpic',
+        'dutyadmin',
+        'published_at',
     ];
     protected $dates = ['published_at'];
 

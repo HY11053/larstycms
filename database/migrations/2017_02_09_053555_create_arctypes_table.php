@@ -31,6 +31,12 @@ class CreateArctypesTable extends Migration
             $table->text('contents')->nullable();
             $table->integer('mid')->default(1);
             $table->timestamps();
+            $table->index('reid');
+            $table->index('topid');
+            $table->index('sortrank');
+            $table->index('typename');
+            $table->index('typedir');
+            $table->index('real_path');
         });
     }
 

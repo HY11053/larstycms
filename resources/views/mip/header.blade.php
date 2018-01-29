@@ -23,7 +23,7 @@
     </div>
 </div>
 <div class="search">
-    <mip-form url="http://mip.21yinpin.com/">
+    <mip-form url="http://mip.zhaji.5988.com/">
     <mip-input type="text" name="keyword" class="search_txt" maxlength="18" id="keyword" value="输入您要找的项目"></mip-form>
     <button type="submit" class="search_btn"></button>
 </div>

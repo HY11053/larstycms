@@ -15,7 +15,7 @@ class ArticleUrlController extends Controller
         $links='';
         foreach ($urls as $url)
         {
-            $links.='http://www.21yinpin.com/'.$url->arctype->real_path.'/'.$url->id.'.shtml#';
+            $links.='http://www.zhaji.5988.com/'.$url->arctype->real_path.'/'.$url->id.'.shtml#';
         }
         echo $links;
 

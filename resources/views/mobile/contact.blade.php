@@ -1,7 +1,7 @@
 @extends('mobile.mobile')
 @section('title')联系我们@stop
 @section('keywords')联系我们@stop
-@section('description')21yinpin.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥@stop
+@section('description')zhaji.5988.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥@stop
 @section('main_content')
     <div class="common_tit">
         <nav class="tit">@include('mobile.position')</nav>
@@ -10,7 +10,7 @@
         <div class="content_brand">
             <div class="content">
                 <h1>联系我们</h1>
-                21yinpin.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥、<br>济南、六安等6个运营机构，员工总数超过1200人。<br><br>
+                zhaji.5988.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥、<br>济南、六安等6个运营机构，员工总数超过1200人。<br><br>
                 <b>客 服 部</b><br>
                 与客户（广告主）进行日常沟通，处理客户项目页面制作和维护等问题,提高客户满意度<br>
                 电话：18512180226<br><br>
@@ -30,7 +30,7 @@
                 加盟咨询热线：18512180226<br>
                 电话：021-31018991<br>
                 传真：021-31018991<br>
-                网址：http://www.21yinpin.com/
+                网址：http://www.zhaji.5988.com/
                 <br>
 
             </div>

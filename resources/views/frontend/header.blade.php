@@ -3,7 +3,7 @@
 <div class="header">
     <div class="top">
         <div class="inner">
-            <div class="top_l">您好，欢迎访问世纪饮品网！</div>
+            <div class="top_l">您好，欢迎访问5988创业商机网！</div>
             <div class="top_r">
                 <div class="tel">7*24小时免费直拨 400-8896-216</div>
                 <div class="add_wx" id="js_add_wx">

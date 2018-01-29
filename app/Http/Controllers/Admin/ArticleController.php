@@ -101,15 +101,15 @@ class ArticleController extends Controller
         auth('admin')->user()->notify(new ArticlePublishedNofication(Archive::latest() ->first()));
         //百度主动推送
         $thisarticle=Archive::where('id',Archive::max('id'))->find(Archive::max('id'));
-        $thisarticleurl='http://www.21yinpin.com'.'/'.$thisarticle->arctype->real_path.'/'.$thisarticle->id.'.shtml';
-        $miparticleurl='http://mip.21yinpin.com'.'/'.$thisarticle->arctype->real_path.'/'.$thisarticle->id.'.shtml';
+        $thisarticleurl='http://www.zhaji.5988.com'.'/'.$thisarticle->arctype->real_path.'/'.$thisarticle->id.'.shtml';
+        $miparticleurl='http://mip.zhaji.5988.com'.'/'.$thisarticle->arctype->real_path.'/'.$thisarticle->id.'.shtml';
         $token=config('app.api', '');
         $mip_api=config('app.mip_api', '');
         if($thisarticle->created_at>Carbon::now()){
             return redirect(action('Admin\ArticleController@Index'));
         }else{
-            $this->BaiduCurl($thisarticleurl,$token,'');
-            $this->BaiduCurl($miparticleurl,$mip_api,'');
+            //$this->BaiduCurl($thisarticleurl,$token,'');
+            //$this->BaiduCurl($miparticleurl,$mip_api,'');
             //event(new SitemapEvent());
             return redirect(action('Admin\ArticleController@Index'));
         }

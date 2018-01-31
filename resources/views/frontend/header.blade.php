@@ -5,13 +5,7 @@
         <div class="inner">
             <div class="top_l">您好，欢迎访问5988创业商机网！</div>
             <div class="top_r">
-                <div class="tel">7*24小时免费直拨 400-8896-216</div>
-                <div class="add_wx" id="js_add_wx">
-                    <img src="/reception/images/wx_link.jpg" width="76" height="22" alt="官方微信"/>
-                    <div class="wx_drop_down">
-                        <img src="/reception/images/wx_qrcode.png" alt="微信二维码"/>
-                    </div>
-                </div>
+                <div class="tel">7*24小时免费直拨 400-8858-878</div>
                 <div class="add_wb">
                   </div>
             </div>
@@ -20,7 +14,7 @@
 
     <div class="header_box_wrap">
         <div class="header_box">
-            <div class="logo"><a href="/" target="_blank"><img src="/reception/images/logo.jpg" alt="零食加盟网"/></a></div>
+            <div class="logo"><a href="/" target="_blank"><img src="http://www.5988.com/public/images/logo.jpg" alt="5988"/></a></div>
             <div class="search">
                 <div class="search_tab">
                     <ul>

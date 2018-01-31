@@ -21,10 +21,10 @@
     </div>
     <div class="bd">
         <ul>
-            <li><a href="/lingshidianpp/5.shtml"><img _src="/mobiles/images/temp/bn1.jpg" src="/mobiles/images/blank.png" /></a></li>
-            <li><a href="/lingshidianpp/38.shtml"><img _src="/mobiles/images/temp/bn2.jpg" src="/mobiles/images/blank.png"/></a></li>
-            <li><a href="/lingshidianpp/91.shtml"><img _src="/mobiles/images/temp/bn3.jpg" src="/mobiles/images/blank.png"/></a></li>
-            <li><a href="/lingshidianpp/111.shtml"><img _src="/mobiles/images/temp/bn4.jpg" src="/mobiles/images/blank.png"/></a></li>
+            <li><a href="/meishizhaji/55.shtmll"><img _src="/mobiles/images/temp/bn1.jpg" src="/mobiles/images/blank.png" /></a></li>
+            <li><a href="/zhongshizhaji/19.shtml"><img _src="/mobiles/images/temp/bn2.jpg" src="/mobiles/images/blank.png"/></a></li>
+            <li><a href="/zhongshizhaji/13.shtml"><img _src="/mobiles/images/temp/bn3.jpg" src="/mobiles/images/blank.png"/></a></li>
+            <li><a href="/hanshizhaji/21.shtml"><img _src="/mobiles/images/temp/bn4.jpg" src="/mobiles/images/blank.png"/></a></li>
         </ul>
     </div>
 </div>

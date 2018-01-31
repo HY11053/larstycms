@@ -14,26 +14,26 @@ class IndexController extends Controller
     function Index()
     {
         //奶茶头部推荐品牌文档
-        $lingshibrands=Archive::where('mid','1')->whereIn('id',[39,54,65,69,24])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
-        $chaohuobrands=Archive::where('mid','1')->whereIn('id',[29,27,34,71,37,41,51,68,70])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
+        $lingshibrands=Archive::where('mid','1')->whereIn('id',[53,39,21,22,44,61])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
+        $chaohuobrands=Archive::where('mid','1')->whereIn('id',[63,59,58,55,46,10,10])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
         $ganguobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',3)->where('published_at','<=',Carbon::now())->take(10)->latest()->get();
-        $jinkoubrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',4)->where('published_at','<=',Carbon::now())->take(10)->latest()->get();
+        $jinkoubrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->whereIn('typeid',[3,4])->where('published_at','<=',Carbon::now())->take(10)->latest()->get();
         //创业好店
         $cybrands=Archive::where('flags','like','%'.'s'.'%')->where('mid','1')->whereIn('typeid',[1,2,3,4])->where('published_at','<=',Carbon::now())->take(8)->latest()->get();
         $cysbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[1,2,3,4])->where('published_at','<=',Carbon::now())->take(11)->orderBy('click','desc')->get();
         $cybsbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[1,2,3,4])->where('published_at','<=',Carbon::now())->skip(11)->take(8)->orderBy('click','desc')->get();
-        //奶茶品牌
+        //韩式炸鸡品牌
         $latestlingshibrands=Archive::where('mid','1')->whereIn('typeid',[1])->where('published_at','<=',Carbon::now())->take(27)->latest()->get();
         $latestrlingshibrands=Archive::where('mid','1')->whereIn('typeid',[1])->where('published_at','<=',Carbon::now())->skip(27)->take(60)->latest()->get();
-        //台湾奶茶品牌
-        $latestchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[3])->where('published_at','<=',Carbon::now())->latest()->take(27)->get();
-        $latestrchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[3])->where('published_at','<=',Carbon::now())->latest()->skip(27)->take(18)->latest()->get();
-        //港式奶茶品牌
-        $latestjinkoubrands=Archive::where('mid','1')->whereIn('typeid',[2])->where('published_at','<=',Carbon::now())->latest()->take(27)->get();
-        $latestrjinkoubrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[2])->where('published_at','<=',Carbon::now())->latest()->take(18)->latest()->get();
-        //网红奶茶品牌
+        //美式炸鸡品牌
+        $latestchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[2])->where('published_at','<=',Carbon::now())->latest()->take(27)->get();
+        $latestrchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[2])->where('published_at','<=',Carbon::now())->latest()->skip(27)->take(18)->latest()->get();
+        //中式炸鸡品牌
+        $latestjinkoubrands=Archive::where('mid','1')->whereIn('typeid',[3])->where('published_at','<=',Carbon::now())->latest()->take(27)->get();
+        $latestrjinkoubrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[3])->where('published_at','<=',Carbon::now())->latest()->take(18)->latest()->get();
+        //台式炸鸡品牌
         $seesbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[4])->where('published_at','<=',Carbon::now())->take(3)->orderBy('click','desc')->get();
-        $seesrbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[4])->where('published_at','<=',Carbon::now())->skip(3)->take(5)->orderBy('click','desc')->get();
+        $seesrbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[5,6])->where('published_at','<=',Carbon::now())->skip(3)->take(5)->orderBy('click','desc')->get();
         //奶茶百科
         $askrows=Archive::where('flags','like','%'.'a'.'%')->where('mid','<>',1)->take(3)->get();
         //奶茶大讲堂

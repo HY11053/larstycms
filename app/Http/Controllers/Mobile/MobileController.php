@@ -23,20 +23,20 @@ class MobileController extends Controller
     {
         //头部导航
         $headers=Arctype::whereIn('id',[1,3,4,5,2,7,8,9])->take(8)->get();
-        //l奶茶店品牌
+        //韩式炸鸡品牌
         $lingshibrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',1)->where('published_at','<=',Carbon::now())->take(3)->latest()->get();
         $lingshibrandls=Archive::where('mid','1')->where('typeid',1)->where('published_at','<=',Carbon::now())->skip(3)->take(5)->latest()->get();
-        //港式品牌
-        $chaohuobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',3)->take(3)->where('published_at','<=',Carbon::now())->latest()->get();
-        $chaohuobrandls=Archive::where('mid','1')->where('typeid',3)->skip(3)->where('published_at','<=',Carbon::now())->take(5)->latest()->get();
-        //台湾奶茶
-        $ganguobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',2)->take(3)->where('published_at','<=',Carbon::now())->latest()->get();
-        $ganguobrandls=Archive::where('mid','1')->where('typeid',2)->skip(3)->where('published_at','<=',Carbon::now())->take(5)->latest()->get();
+        //美式炸鸡品牌
+        $chaohuobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',2)->take(3)->where('published_at','<=',Carbon::now())->latest()->get();
+        $chaohuobrandls=Archive::where('mid','1')->where('typeid',2)->skip(3)->where('published_at','<=',Carbon::now())->take(5)->latest()->get();
+        //中式炸鸡品牌
+        $ganguobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',3)->take(3)->where('published_at','<=',Carbon::now())->latest()->get();
+        $ganguobrandls=Archive::where('mid','1')->where('typeid',3)->skip(3)->where('published_at','<=',Carbon::now())->take(5)->latest()->get();
         $jinkoubrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',4)->take(3)->where('published_at','<=',Carbon::now())->latest()->get();
         $jinkoubrandls=Archive::where('mid','1')->where('typeid',4)->skip(3)->where('published_at','<=',Carbon::now())->take(5)->latest()->get();
         //最新品牌
         $newbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[1,2,3,4])->where('published_at','<=',Carbon::now())->take(3)->latest()->get();
-        $newbrandls=Archive::where('mid','1')->whereIn('typeid',[1,3,4,2])->where('published_at','<=',Carbon::now())->skip(3)->take(5)->latest()->get();
+        $newbrandls=Archive::where('mid','1')->whereIn('typeid',[1,3,4,2,5])->where('published_at','<=',Carbon::now())->skip(3)->take(5)->latest()->get();
         //资讯
         $newsarticles=Archive::where('typeid',5)->take(8)->where('published_at','<=',Carbon::now())->latest()->get();
         //问答

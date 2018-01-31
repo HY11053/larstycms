@@ -5,10 +5,10 @@
 @section('headlibs')
     <meta name="Copyright" content="5988创业商机网-{{env('APP_URL')}}"/>
     <meta name="author" content="5988创业商机网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" >
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
 @stop
 @section('main_content')
@@ -16,20 +16,20 @@
 <div class="main clearfix">
 	<!--左边 开始-->
 	<div class="ph_l">
-		<p class="tit">58奶茶店品牌排行榜</p>
+		<p class="tit">炸鸡店品牌排行榜</p>
 		<ul>
-			<li class="cur"><a target="_self" href="/pinpai">奶茶店品牌</a></li>
-			<li><a target="_self" href="/taiwannaicha">台湾奶茶</a></li>
-			<li><a target="_self" href="/gangshinaicha">港式奶茶</a></li>
-			<li><a target="_self" href="/wanghongnaicha">网红奶茶</a></li>
-			<li><a target="_self" href="/brands">奶茶品牌大全</a></li>
+			<li class="cur"><a target="_self" href="/hanshizhaji">韩式炸鸡</a></li>
+			<li><a target="_self" href="/meishizhaji">美式炸鸡</a></li>
+			<li><a target="_self" href="/zhongshizhaji">中式炸鸡</a></li>
+			<li><a target="_self" href="taishizhaji">泰式炸鸡</a></li>
+			<li><a target="_self" href="/fashizhaji">法式炸鸡</a></li>
 		</ul>
 	</div>
 	<!--左边 结束-->
 	
 	<!--右边 开始-->
 	<div class="ph_r">
-		<div class="hd"><em>奶茶店品牌排行榜</em></div>
+		<div class="hd"><em>炸鸡店品牌排行榜</em></div>
 		<div class="tip_info">{{$thistypeinfo->description}}</div>
 		<div class="bd">
 

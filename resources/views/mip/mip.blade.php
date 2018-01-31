@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
-    <link rel="canonical" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}">
+    <link rel="canonical" href="{{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}">
     <meta name="wap-font-scale" content="no"/>
     <meta name="format-detection" content="telephone=no">
     <meta name="applicable-device" content="mobile">
@@ -459,8 +459,8 @@
             <a href="/storage/mobilesitemap.xml">网站地图</a>|<a href="/about/" rel="nofollow">关于我们</a>|<a href="/law/" rel="nofollow">免责声明</a>|<a href="{{env('APP_URL')}}">电脑版</a>
         </div>
         <div class="copyright">
-            <p>5988创业商机网  沪ICP备16055116号-17</p>
-            <p>上海莫卡网络科技有限公司</p>
+            <p>5988创业商机网 沪ICP备14037163号-32</p>
+            <p>上海佐赛网络科技有限公司</p>
         </div>
     </div>
     <mip-fixed type="bottom">

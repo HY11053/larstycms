@@ -5,10 +5,10 @@
 @section('headlibs')
     <meta name="Copyright" content="5988创业商机网-{{env('APP_URL')}}"/>
     <meta name="author" content="5988创业商机网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" >
     <link rel="canonical" href="{{config('app.url')}}{{Request::getrequesturi()}}"/>
     <meta property="og:type" content="article"/>
     <meta property="article:published_time" content="{{$thisarticleinfos->created_at}}+08:00" /> <meta property="og:image" content="{{env('APP_URL')}}{{$thisarticleinfos->litpic}}"/>
@@ -46,7 +46,7 @@
             <div class="detail">
                 <ul>
                     <li>投资金额：<span class="price">{{$thisarticleinfos->article['brandpay']}}</span></li>
-                    <li>所属行业：<span class="crumbs">奶茶、饮品类</span></li>
+                    <li>所属行业：<span class="crumbs">炸鸡品牌类</span></li>
                 </ul>
             </div>
             <div class="tit_pice">
@@ -66,7 +66,7 @@
                     <li style=" margin-left:35px">品牌好评率 <span class="price">{{rand(90,99)}}%</span></li>
                 </ul>
             </div>
-            <div class="tel">联系电话：<span>400-8896-216</span></div>
+            <div class="tel">联系电话：<span>400-8858-878</span></div>
             <div class="btn_area"> <a id="chatNowButton" href="#msg" class="zixun_btn">立即咨询</a> <a href="javascript:;" class="suoyao_btn ico-quoted">成本预算</a> </div>
         </div>
         <div class="layout2_right fl">
@@ -424,7 +424,7 @@
             </div>
             <script src="/reception/js/GlobalProvinces.js" type="text/javascript"></script>
             <div class="new_bt">
-                <h3> <i></i> 奶茶店加盟排行榜 </h3>
+                <h3> <i></i> 炸鸡店加盟排行榜 </h3>
                 <div class="rank_bd">
                     <ul>
                         @foreach($topbrands as $index=>$topbrand)
@@ -447,7 +447,7 @@
                 </div>
             </div>
             <div class="new_bt">
-                <h3> <i></i> 最新奶茶加盟项目 </h3>
+                <h3> <i></i> 最新炸鸡加盟项目 </h3>
                 <div class="bt_xiangmu">
                     <ul>
                         @foreach($latestbrands as $latestbrand)
@@ -467,7 +467,7 @@
             </div>
 
             <div class="new_bt">
-                <h3> <i></i> 最新奶茶新闻 </h3>
+                <h3> <i></i> 最新炸鸡新闻 </h3>
                 <div class="bts com_news">
                     <div class="common">
                         <ul>

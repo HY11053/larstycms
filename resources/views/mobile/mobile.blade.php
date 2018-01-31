@@ -15,8 +15,8 @@
     @endif
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
-    <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}" >
-    <link rel="miphtml" href="{{str_replace('http://www.','http://mip.',config('app.url'))}}{{Request::getrequesturi()}}">
+    <link rel="canonical" href="{{config('app.url')}}{{Request::getrequesturi()}}" >
+    <link rel="miphtml" href="{{str_replace('http://zhaji.','http://mip.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}">
     <link rel="stylesheet" type="text/css" href="/mobiles/css/css.css">
     <script type="text/javascript" src="/mobiles/js/jquery.min.js"></script>
     <script type="text/javascript" src="/mobiles/js/TouchSlide.1.1.js"></script>
@@ -54,8 +54,8 @@
             <a href="/storage/mobilesitemap.xml">网站地图</a>|<a href="/about/" rel="nofollow">关于我们</a>|<a href="/law/" rel="nofollow">免责声明</a>|<a href="{{env('APP_URL')}}">电脑版</a>
         </div>
         <div class="copyright">
-            <p>5988创业商机网  沪ICP备16055116号-17</p>
-            <p>上海莫卡网络科技有限公司</p>
+            <p>5988创业商机网 沪ICP备14037163号-32</p>
+            <p>上海佐赛网络科技有限公司</p>
         </div>
     </div>
 </div>

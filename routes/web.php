@@ -129,9 +129,6 @@ Route::get('phone',function(){
  */
 Route::group(['domain' => 'mip.zhaji.5988.com'], function () {
     Route::get('/', 'Mip\MipIndexController@MipIndex');
-    Route::get('about','Mip\MipIndexController@Mipabout');
-    Route::get('law','Mip\MipIndexController@Miplaw');
-    Route::get('contact','Mip\MipIndexController@Mipcontact');
     Route::get('paihangbang','Mip\MipIndexController@MipPaihangbang');
     Route::get('paihangbang/page/{page}/','Mip\MipIndexController@MipPaihangbang')->name('paihangbanglists');
     Route::get('brands','Mip\MipIndexController@MipPinpai');
@@ -145,10 +142,6 @@ Route::group(['domain' => 'mip.zhaji.5988.com'], function () {
 //前台界面
 Route::group(['domain' => 'm.zhaji.5988.com'], function () {
     Route::get('/', 'Mobile\MobileController@Index');
-    Route::get('about','Mobile\StatementController@about');
-    Route::get('law','Mobile\StatementController@law');
-    //Route::get('map','Frontend\StatementController@map');
-    Route::get('contact','Mobile\StatementController@contact');
     Route::get('paihangbang','Mobile\MobileController@Paihangbang');
     Route::get('paihangbang/page/{page}/','Mobile\MobileController@Paihangbang')->name('paihangbanglists');
     Route::get('brands','Mobile\MobileController@Pinpai');
@@ -180,10 +173,7 @@ Route::put('answer/{id}','Frontend\AnswerController@AnswerCreate')->name('answer
 Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController@Compare');
 Route::post('comments','Frontend\CommentController@PostComment');
 Route::post('commentreversion/{id}','Frontend\CommentReversionController@CommentReversion');
-Route::get('about','Frontend\StatementController@about');
-Route::get('law','Frontend\StatementController@law');
 //Route::get('map','Frontend\StatementController@map');
-Route::get('contact','Frontend\StatementController@contact');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('log/{data?}','Frontend\LogController@LogView');

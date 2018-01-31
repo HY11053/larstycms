@@ -13,7 +13,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}">奶茶店品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}">韩式炸鸡</a>
         </div>
         <div class="bd">
             <ul>
@@ -45,7 +45,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}">港式奶茶加盟</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}">美式炸鸡品牌加盟</a>
         </div>
         <div class="bd">
             <ul>
@@ -78,7 +78,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}">台湾奶茶</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}">中式炸鸡品牌加盟</a>
         </div>
         <div class="bd">
             <ul>
@@ -112,7 +112,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',4)->value('real_path')}}">网红奶茶品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',4)->value('real_path')}}">台式炸鸡品牌加盟</a>
         </div>
         <div class="bd">
             <ul>

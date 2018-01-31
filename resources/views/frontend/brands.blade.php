@@ -5,10 +5,10 @@
 @section('headlibs')
     <meta name="Copyright" content="5988创业商机网-{{env('APP_URL')}}"/>
     <meta name="author" content="5988创业商机网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://zhaji.','http://m.zhaji.',config('app.url'))}}{{Request::getrequesturi()}}" >
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
 @stop
 @section('main_content')
@@ -203,7 +203,7 @@
             </div>
         </div>
 
-        <div class="bn260"><a href="/taiwannaicha/29.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt="CoCo奶茶"/></a></div>
+        <div class="bn260"><a href="/hanshizhaji/21.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt="韩式炸鸡"/></a></div>
 
         <div class="side_news">
             <div class="common_bt">

@@ -15,20 +15,20 @@
 @section('subnav')
     <div class="sub_nav">
         <dl>
-            <dt class="icon1"><a href="/{{\App\AdminModel\Arctype::where('id','1')->value('real_path')}}" target="_blank">奶茶加盟品牌大全</a></dt>
+            <dt class="icon1"><a href="/{{\App\AdminModel\Arctype::where('id','1')->value('real_path')}}" target="_blank">韩式炸鸡品牌</a></dt>
             @foreach($lingshibrands as $lingshibrand)
             <dd><a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml" target="_blank" title="{{$lingshibrand->article->brandname}}">{{$lingshibrand->article->brandname}}</a></dd>
             @endforeach
         </dl>
         <dl class="dl_wid1">
-            <dt class="icon2"><a href="/{{\App\AdminModel\Arctype::where('id','3')->value('real_path')}}" target="_blank" >台湾奶茶加盟品牌</a></dt>
+            <dt class="icon2"><a href="/{{\App\AdminModel\Arctype::where('id','2')->value('real_path')}}" target="_blank" >美式炸鸡品牌</a></dt>
             @foreach($chaohuobrands as $chaohuobrand)
                 <dd><a href="/{{ $chaohuobrand->arctype->real_path}}/{{ $chaohuobrand->id}}.shtml" target="_blank" title="{{ $chaohuobrand->article->brandname}}">{{ $chaohuobrand->article->brandname}}</a></dd>
             @endforeach
 
         </dl>
         <dl class="dl_wid1">
-            <dt class="icon3"><a href="/{{\App\AdminModel\Arctype::where('id','4')->value('real_path')}}" target="_blank">港式、网红奶茶品牌加盟</a></dt>
+            <dt class="icon3"><a href="/{{\App\AdminModel\Arctype::where('id','3')->value('real_path')}}" target="_blank">中式炸鸡品牌</a></dt>
             @foreach($jinkoubrands as $jinkoubrand)
             <dd><a href="/{{ $jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtml" target="_blank" title="{{$jinkoubrand->article->brandname}}">{{$jinkoubrand->article->brandname}}</a></dd>
             @endforeach
@@ -66,10 +66,10 @@
 								<span class="cont">
 								  <select name="select1" id="select1" class="select_bk">
 									<option selected="selected" value="0">行业分类</option>
-									<option value="1">奶茶店品牌</option>
-									<option value="3">港式奶茶</option>
-									<option value="4">台湾奶茶</option>
-									<option value="5">网红奶茶</option>
+									<option value="1">韩式炸鸡</option>
+									<option value="2">美式炸鸡</option>
+									<option value="3">中式炸鸡</option>
+									<option value="4">台式炸鸡</option>
 								  </select>
 								</span>
                                     </p>
@@ -133,10 +133,10 @@
                     </div>
                     <div class="bd">
                         <ul>
-                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',29)->value('typeid'))->value('real_path')}}/29.shtml" target="_blank"><img src="/reception/images/temp/banner1.jpg" /></a></li>
-                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',39)->value('typeid'))->value('real_path')}}/39.shtml" target="_blank"><img src="/reception/images/temp/banner2.jpg" /></a></li>
-                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',79)->value('typeid'))->value('real_path')}}/79.shtml" target="_blank"><img src="/reception/images/temp/banner3.jpg" /></a></li>
-                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',72)->value('typeid'))->value('real_path')}}/72.shtml" target="_blank"><img src="/reception/images/temp/banner4.jpg" /></a></li>
+                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',55)->value('typeid'))->value('real_path')}}/55.shtml" target="_blank"><img src="/reception/images/temp/banner1.jpg" /></a></li>
+                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',19)->value('typeid'))->value('real_path')}}/19.shtml" target="_blank"><img src="/reception/images/temp/banner2.jpg" /></a></li>
+                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',13)->value('typeid'))->value('real_path')}}/13.shtml" target="_blank"><img src="/reception/images/temp/banner3.jpg" /></a></li>
+                            <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',21)->value('typeid'))->value('real_path')}}/21.shtml" target="_blank"><img src="/reception/images/temp/banner4.jpg" /></a></li>
                         </ul>
                     </div>
                 </div>
@@ -165,14 +165,14 @@
 
             <div class="index_box1_r">
                 <div class="count">
-                    <p>5988创业商机网入驻品牌数<br>
+                    <p>5988创业商机网炸鸡品牌数<br>
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',29)->value('typeid'))->value('real_path')}}/29.shtml" title="【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!" target="_blank">【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',39)->value('typeid'))->value('real_path')}}/39.shtml" title="【一点点奶茶】源自台湾 一杯奶茶 一句问候" target="_blank">【一点点奶茶】源自台湾 一杯奶茶 一句问候</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',79)->value('typeid'))->value('real_path')}}/79.shtml" title="【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“" target="_blank">【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',72)->value('typeid'))->value('real_path')}}/72.shtml" title="【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营" target="_blank">【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',55)->value('typeid'))->value('real_path')}}/29.shtml" title="【华莱士炸鸡】低成本、高回报 免费技术培训" target="_blank">【华莱士炸鸡】低成本、高回报 免费技术培训</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',19)->value('typeid'))->value('real_path')}}/39.shtml" title="【巨咖炸鸡】STAR ZONE 巨咖地带 ☆由你做主" target="_blank">【巨咖炸鸡】STAR ZONE 巨咖地带☆ 由你做主</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',13)->value('typeid'))->value('real_path')}}/79.shtml" title="【老北京炸鸡】5大口味 独家持有 地道北京味“" target="_blank">【老北京炸鸡】5大口味 独家持有 地道北京味</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',21)->value('typeid'))->value('real_path')}}/21.shtml" title="【韩国炸鸡】韩国正宗味 欧巴邀您来开店" target="_blank">【韩国炸鸡】韩国正宗味 欧巴邀您来开店</a></li>
                     </ul>
                     <div class="btn"><a href="javascript:;" class="ico-quoted">马上找好项目</a></div>
                 </div>
@@ -198,7 +198,7 @@
         <section>
         <div class="index_box2">
             <div class="hd">
-                <span class="tit">创业好店</span>
+                <span class="tit">优选品牌</span>
                 @foreach($cybrands as $cybrand)
                 <span class="txt"><a href="/{{$cybrand->arctype->real_path}}/{{$cybrand->id}}.shtml" target="_blank">{{$cybrand->article->brandname}}</a> |  </span>
                 @endforeach
@@ -226,15 +226,15 @@
         <section>
         <div class="index_box3 clearfix">
             <div class="index_box3_l">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic1.jpg" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}" alt="奶茶店加盟"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank">奶茶店加盟</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic1.jpg" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}" alt="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank">{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}</a></p>
                 <p class="desc">热门品牌 抢占商机</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">奶茶品牌</span>
-                    <span class="desc">精选全球好奶茶品牌、看得见的商机前景</span>
+                    <span class="tit">{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}</span>
+                    <span class="desc">精选全网韩式炸鸡品牌、看得见的商机前景</span>
                     <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
@@ -272,16 +272,16 @@
         <section>
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank">港式奶茶</a></p>
-                <p class="desc">丝袜奶茶/港式拉茶</p>
-                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">查看详情&gt;</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank">{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}</a></p>
+                <p class="desc">{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}</p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">港式奶茶加盟</span>
+                    <span class="tit">{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}</span>
                     <span class="desc">选址-设计-装修-开店-经营一条龙</span>
-                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">更多&gt;&gt;</a></span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',2)->value('typename')}}">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -313,16 +313,16 @@
         <section>
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="台湾奶茶"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank">台湾奶茶</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank">{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}</a></p>
                 <p class="desc">22个系列 百种产品</p>
-                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">台湾奶茶品牌</span>
-                    <span class="desc">加盟台湾正宗奶茶 热销大陆 2人操作，24小时热卖不断</span>
-                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="tit">{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}</span>
+                    <span class="desc">食料直供， 2人操作，24小时热卖不断</span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -351,20 +351,20 @@
 
         <div class="bn">
             <ul>
-                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',336)->value('typeid'))->value('real_path')}}/336.shtml" target="_blank"><img src="/reception/images/temp/bn1.jpg" /></a></li>
-                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',172)->value('typeid'))->value('real_path')}}/172.shtml" target="_blank"><img src="/reception/images/temp/bn2.jpg" /></a></li>
+                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',12)->value('typeid'))->value('real_path')}}/12.shtml" target="_blank"><img src="/reception/images/temp/bn1.jpg" /></a></li>
+                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',6)->value('typeid'))->value('real_path')}}/6.shtml" target="_blank"><img src="/reception/images/temp/bn2.jpg" /></a></li>
             </ul>
         </div>
 
         <section>
         <div class="index_box4 clearfix">
             <div class="cont4_con fl">
-                <h2>网红奶茶</h2>
+                <h2>{{\App\AdminModel\Arctype::where('id',4)->value('typename')}}</h2>
                 <div class="con_fir">
                     <div class="fir_left">
-                        @foreach($seesrbrands as $seesrbrand)
+                        @foreach($seesbrands as $seesbrand)
 
-                        <div class="li_div"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->article->brandname}}" target="_blank"><img src="{{$seesrbrand->litpic}}"></a><span><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" target="_blank">{{$seesrbrand->article->brandname}}</a><br><font color="#9c9c9c">{{$seesrbrand->article->brandattch}}人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
+                        <div class="li_div"><a href="/{{$seesbrand->arctype->real_path}}/{{$seesbrand->id}}.shtml" title="{{$seesbrand->article->brandname}}" target="_blank"><img src="{{$seesbrand->litpic}}"></a><span><a href="/{{$seesbrand->arctype->real_path}}/{{$seesbrand->id}}.shtml" target="_blank">{{$seesbrand->article->brandname}}</a><br><font color="#9c9c9c">{{$seesbrand->article->brandattch}}人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
                         @endforeach
                     </div>
                     <div class="fir_right">
@@ -380,7 +380,7 @@
                 </div>
             </div>
             <div class="cont4_con fr">
-                <h2>奶茶百科</h2>
+                <h2>炸鸡百科</h2>
                 <div class="con_sec">
                     <ul>
                         @foreach($askrows as $index=>$askrow)
@@ -401,7 +401,7 @@
         <section>
         <div class="index_box5">
             <div class="cont5_left">
-                <h2>奶茶大讲堂</h2>
+                <h2>炸鸡大讲堂</h2>
                 <div class="left_one">
                     <div class="one_top">
                         @foreach($recommendnews as $recommendnew)
@@ -430,7 +430,7 @@
                     </div>
                 </div>
                 <div class="left_two">
-                    <h4>奶茶采购信息</h4>
+                    <h4>炸鸡采购信息</h4>
                     <dl>
                         @foreach($caiguonews as $index=>$caiguonew)
                         <dd><span>{{date('Y-m-d',strtotime($caiguonew->created_at))}}</span><i class=" ye ">{{$index+1}}.</i><a href="/{{$caiguonew->arctype->real_path}}/{{$caiguonew->id}}.shtml" target="_blank" title="{{$caiguonew->title}}">{{$caiguonew->title}}</a></dd>
@@ -451,7 +451,7 @@
                 </div>
             </div>
             <div class="cont5_right">
-                <h2>奶茶配方大全</h2>
+                <h2>炸鸡内容资讯</h2>
                 <div class="right_con">
                     <dl>
                         @foreach($zhbrands as $nums=>$zhbrand)
@@ -468,8 +468,8 @@
 
         <div class="bn">
             <ul>
-                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',53)->value('typeid'))->value('real_path')}}/53.shtml" target="_blank"><img src="/reception/images/temp/bn3.jpg" /></a></li>
-                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',35)->value('typeid'))->value('real_path')}}/35.shtml" target="_blank"><img src="/reception/images/temp/bn4.jpg" /></a></li>
+                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',9)->value('typeid'))->value('real_path')}}/9.shtml" target="_blank"><img src="/reception/images/temp/bn3.jpg" /></a></li>
+                <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',30)->value('typeid'))->value('real_path')}}/30.shtml" target="_blank"><img src="/reception/images/temp/bn4.jpg" /></a></li>
             </ul>
         </div>
 
